@@ -29,6 +29,8 @@
 		97B246CF24CB0A09003DD235 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B246CE24CB0A09003DD235 /* AppCoordinator.swift */; };
 		97B246D124CB0A38003DD235 /* FactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B246D024CB0A38003DD235 /* FactsCoordinator.swift */; };
 		97B246D324CB0A50003DD235 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B246D224CB0A50003DD235 /* Coordinator.swift */; };
+		97B246D524CB0CAE003DD235 /* DataLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B246D424CB0CAE003DD235 /* DataLoadingService.swift */; };
+		97B246D724CB0CB4003DD235 /* DataTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B246D624CB0CB3003DD235 /* DataTransformation.swift */; };
 		DD813D5D02FCF5BFB08BD2BD /* Pods_MVVMDemoSBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80DED1378C5997AC33D0F2F /* Pods_MVVMDemoSBUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		97B246CE24CB0A09003DD235 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		97B246D024CB0A38003DD235 /* FactsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsCoordinator.swift; sourceTree = "<group>"; };
 		97B246D224CB0A50003DD235 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		97B246D424CB0CAE003DD235 /* DataLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoadingService.swift; sourceTree = "<group>"; };
+		97B246D624CB0CB3003DD235 /* DataTransformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransformation.swift; sourceTree = "<group>"; };
 		A8BFCF33784AAF7A45D64119 /* Pods-MVVMDemoSBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemoSBUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMDemoSBUITests/Pods-MVVMDemoSBUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C329E77B1B393DF84AE4DC4D /* Pods-MVVMDemoSBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemoSBTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMDemoSBTests/Pods-MVVMDemoSBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6097F4338E9C565196157BB /* Pods-MVVMDemoSB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemoSB.release.xcconfig"; path = "Target Support Files/Pods-MVVMDemoSB/Pods-MVVMDemoSB.release.xcconfig"; sourceTree = "<group>"; };
@@ -278,6 +282,8 @@
 		975932E424C6D848008BFA19 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				97B246D624CB0CB3003DD235 /* DataTransformation.swift */,
+				97B246D424CB0CAE003DD235 /* DataLoadingService.swift */,
 				975932E524C6D8DF008BFA19 /* FactsLoadingService.swift */,
 			);
 			path = service;
@@ -584,6 +590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97B246D724CB0CB4003DD235 /* DataTransformation.swift in Sources */,
 				97B246D324CB0A50003DD235 /* Coordinator.swift in Sources */,
 				975932DF24C6D73E008BFA19 /* FactsViewModel.swift in Sources */,
 				975932FC24C6FAE2008BFA19 /* ApiKeys.swift in Sources */,
@@ -600,6 +607,7 @@
 				9759330824C6FC32008BFA19 /* Extensions.swift in Sources */,
 				975932E624C6D8DF008BFA19 /* FactsLoadingService.swift in Sources */,
 				9759330324C6FB4D008BFA19 /* BaseUrls.swift in Sources */,
+				97B246D524CB0CAE003DD235 /* DataLoadingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
