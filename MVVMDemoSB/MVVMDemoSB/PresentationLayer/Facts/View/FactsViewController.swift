@@ -7,13 +7,12 @@
 //
 
 import UIKit
-class LandingViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-    }
+import RxSwift
+import RxCocoa
 
+class FactsViewController: UIViewController {
+    
 
 }
 

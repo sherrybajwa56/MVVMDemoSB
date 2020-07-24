@@ -6,4 +6,18 @@
 //  Copyright © 2020 Sherry Bajwa. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+
+protocol FactsService: class {
+
+  
+}
+
+class FactsServiceImplementation: FactsService {
+    
+ private let networkClient = NetworkClient(baseUrlString: BaseURLs.facts)
+    
+    
+ }
+   
+

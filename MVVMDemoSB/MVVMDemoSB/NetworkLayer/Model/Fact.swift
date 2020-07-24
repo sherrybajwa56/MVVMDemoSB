@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct FactDetail: Codable {
+    let title: String
+    let rows: [Fact]!
+}
+
+struct Fact: Codable {
+    let title: String?
+    let description: String?
+    let imageHref: String?
+}
+
+
+
+

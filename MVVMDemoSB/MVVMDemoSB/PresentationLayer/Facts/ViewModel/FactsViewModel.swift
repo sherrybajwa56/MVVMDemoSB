@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+
+/// View model interface that is visible to the PhotosViewController
+protocol FactsViewModel: class {
+   
+}
+
+final class FactsViewModelImplementation: FactsViewModel {
+  
+    
+    
+}
+
