@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+protocol DataToImageTranformationService: class {
+    func getImage(from data: Data) -> UIImage?
+}
+
+class DataTransformationServiceImplementation: DataToImageTranformationService {
+    
+    func getImage(from data: Data) -> UIImage? {
+        return UIImage(data: data)
+    }
+}
