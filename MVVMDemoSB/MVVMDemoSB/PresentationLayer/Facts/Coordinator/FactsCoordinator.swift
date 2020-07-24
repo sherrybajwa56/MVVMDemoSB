@@ -9,7 +9,7 @@
 import UIKit
 
 protocol FactsCoordinator: class {
-    func pushToPhotoDetail(with photoId: String)
+    func pushToDetail()
 }
 
 class FactsCoordinatorImplementation: Coordinator {
@@ -21,13 +21,6 @@ class FactsCoordinatorImplementation: Coordinator {
     
     func start() {
         let factsViewController = FactsViewController()
-        let factsViewModel = FactsViewModelImplementation(
-            factsService: FactsServiceImplementation(),
-            factLoadingService: DataLoadingServiceImplementation(),
-            dataTofacTranformService: DataTransformationServiceImplementation(),
-            coordinator: self
-        )
-        factsViewController.viewModel = factsViewModel
         
         navigationController
             .pushViewController(factsViewController, animated: false)
@@ -37,7 +30,7 @@ class FactsCoordinatorImplementation: Coordinator {
 }
 extension FactsCoordinatorImplementation : FactsCoordinator {
     
-    func pushToPhotoDetail(with photoId: String) {
+    func pushToDetail() {
         
     }
 }

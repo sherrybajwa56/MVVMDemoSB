@@ -26,6 +26,9 @@
 		9759330624C6FB72008BFA19 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759330524C6FB72008BFA19 /* HTTPClient.swift */; };
 		9759330824C6FC32008BFA19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759330724C6FC32008BFA19 /* Extensions.swift */; };
 		9759330A24C6FDBA008BFA19 /* FactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759330924C6FDBA008BFA19 /* FactCell.swift */; };
+		97B246CF24CB0A09003DD235 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B246CE24CB0A09003DD235 /* AppCoordinator.swift */; };
+		97B246D124CB0A38003DD235 /* FactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B246D024CB0A38003DD235 /* FactsCoordinator.swift */; };
+		97B246D324CB0A50003DD235 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B246D224CB0A50003DD235 /* Coordinator.swift */; };
 		DD813D5D02FCF5BFB08BD2BD /* Pods_MVVMDemoSBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80DED1378C5997AC33D0F2F /* Pods_MVVMDemoSBUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		9759330524C6FB72008BFA19 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		9759330724C6FC32008BFA19 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9759330924C6FDBA008BFA19 /* FactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCell.swift; sourceTree = "<group>"; };
+		97B246CE24CB0A09003DD235 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		97B246D024CB0A38003DD235 /* FactsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsCoordinator.swift; sourceTree = "<group>"; };
+		97B246D224CB0A50003DD235 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A8BFCF33784AAF7A45D64119 /* Pods-MVVMDemoSBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemoSBUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMDemoSBUITests/Pods-MVVMDemoSBUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C329E77B1B393DF84AE4DC4D /* Pods-MVVMDemoSBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemoSBTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMDemoSBTests/Pods-MVVMDemoSBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6097F4338E9C565196157BB /* Pods-MVVMDemoSB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemoSB.release.xcconfig"; path = "Target Support Files/Pods-MVVMDemoSB/Pods-MVVMDemoSB.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				975932A024C6A508008BFA19 /* AppDelegate.swift */,
+				97B246CE24CB0A09003DD235 /* AppCoordinator.swift */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -279,6 +286,7 @@
 		975932EF24C6F466008BFA19 /* Bases */ = {
 			isa = PBXGroup;
 			children = (
+				97B246D224CB0A50003DD235 /* Coordinator.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -286,6 +294,7 @@
 		975932F424C6F4AC008BFA19 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				97B246D024CB0A38003DD235 /* FactsCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -575,12 +584,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97B246D324CB0A50003DD235 /* Coordinator.swift in Sources */,
 				975932DF24C6D73E008BFA19 /* FactsViewModel.swift in Sources */,
 				975932FC24C6FAE2008BFA19 /* ApiKeys.swift in Sources */,
+				97B246D124CB0A38003DD235 /* FactsCoordinator.swift in Sources */,
 				975932A524C6A508008BFA19 /* FactsViewController.swift in Sources */,
 				975932A124C6A508008BFA19 /* AppDelegate.swift in Sources */,
 				975932E124C6D766008BFA19 /* Fact.swift in Sources */,
 				9759330A24C6FDBA008BFA19 /* FactCell.swift in Sources */,
+				97B246CF24CB0A09003DD235 /* AppCoordinator.swift in Sources */,
 				975932FE24C6FAFF008BFA19 /* NetworkErrors.swift in Sources */,
 				9759330124C6FB2F008BFA19 /* ApiEndPoints.swift in Sources */,
 				9759330624C6FB72008BFA19 /* HTTPClient.swift in Sources */,
